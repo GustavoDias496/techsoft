@@ -1,0 +1,103 @@
+.pagetitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    padding: 2em;
+    font-family: Helvetica;
+    font-weight: 500;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-areas:
+    "card card card" 
+    "card card card";
+    width: 100%;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 2em;
+}
+
+.card{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.card img{
+    width: 15vw;
+    margin: 1em;
+}
+
+.cardText{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    border-top: 2px solid #000000;
+    padding-top: 1em;
+}
+
+.text{
+    margin-bottom: 1em;
+    margin-left: 1em;
+    font-family: Helvetica;
+}
+
+.cardOptions{
+    width: 100%;
+    border-top: 2px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.cardOptions img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.paginationButtons{
+    height: 40px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.paginationButtons a{
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #2b2eff;
+    color: #2b2eff;
+    cursor: pointer;
+}
+
+.paginationButtons a:hover{
+    color: #FFFFFF;
+    background-color: #2b2eff;
+}
+
+.paginationActive a{
+    color: #FFFFFF;
+    background: #2b2eff;
+}

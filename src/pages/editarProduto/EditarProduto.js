@@ -1,21 +1,20 @@
 import NavBar from "../../components/navbar/Navbar"
 import ProductForm from "../../components/ProductForm/ProductForm"
-import styles from './CadastroProduto.module.css'
-
-function CadastroProduto(){
+import styles from './EditarProduto.module.css'
 
 
+function EditProduto(){
     return(
-        <div >
+        <div>
             <NavBar/>
             <div className={styles.container}>
                 <div className={styles.title}>
-                    <h1>Cadastro de Produtos</h1>
+                    <h1>Editar de Produtos</h1>
                 </div>
-                <ProductForm btnText='Cadastrar Produto'/>
+                <ProductForm btnText='Editar Produto'/>
             </div>
         </div>
     )
 }
 
-export default CadastroProduto 
+export default EditProduto
