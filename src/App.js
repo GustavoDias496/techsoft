@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/home/index";
-import CadastroProduto from "./pages/cadastroProduto/index";
+import CadastroProduto from "./pages/cadastroProduto/CadastroProduto";
 import ListarProdutos from "./pages/listarProdutos/index";
 import EditProduto from "./pages/editarProduto/index";
 

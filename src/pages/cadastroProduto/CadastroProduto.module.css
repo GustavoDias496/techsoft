@@ -1,0 +1,21 @@
+.title{
+    padding-top: 7%;
+    color: #024059;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 0%;
+}
+
+.container{
+    width: 450px;
+    margin: 0 auto;
+    padding: 3em;
+} 
+
+.container h1{
+    margin-bottom: 0.5em;
+}
+
+.container p{
+    color: blue;
+}
