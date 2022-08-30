@@ -27,7 +27,7 @@ function ListarProdutos(){
                     <span className={styles.text}>Valor: R$ {product.value}</span>
                     <span className={styles.text}>Total de vendas: {product.amountSales}</span>
                     <span className={styles.text}>Descrição: {product.description}</span>
-                </div>
+                </div> 
                 <div className={styles.cardOptions}>
                     <Link to={{ pathname:`/EditProduto/${product._id}` }}><img src={editicon} alt="icone aplicativo"/></Link> 
                     <img onClick={ () => deleteProduct(product._id) } src={deleteicon} alt="icone aplicativo"/>
@@ -60,7 +60,7 @@ function ListarProdutos(){
     return(
         <div >
             <NavBar/>
-            <div className={styles.pagetitle}>
+            <div className={styles.title}>
                 <p>Listar Produtos</p>
             </div>
             <div className={styles.cardContainer}>

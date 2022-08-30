@@ -16,6 +16,6 @@ function CadastroProduto(){
             </div>
         </div>
     )
-}
+} 
 
 export default CadastroProduto 

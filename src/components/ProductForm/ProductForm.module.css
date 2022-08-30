@@ -1,5 +1,25 @@
 .form{
     width: 100%;
-    margin: 2em 0;
+    font-family: Helvetica;
+}
 
+.formControl{
+    display: flex;
+    flex-direction: column;
+}
+
+.formControl label{
+    margin-bottom: .6em;
+    font-weight: bold;
+}
+
+.formControl input{
+    padding: .7em;
+    border-radius: 7px;
+    border: none;
+    background-color: rgba(2, 89, 64, 0.2);
+}
+
+.formControl input::placeholder{
+    color: #000000;
 }

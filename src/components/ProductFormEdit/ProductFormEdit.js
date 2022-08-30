@@ -60,18 +60,35 @@ function ProductFormEdit({btnText}){
 
     return(
         <form onSubmit={handleSubmit(updateProduct)} className={styles.form}>
-            
-            <input onChange={(e)=>handleOnChange(e)} type="text" name="productName" {...register("productName")} placeholder="Nome"/>
-            <p className='error-message'>{errors.productName?.message}</p>
-            <input onChange={(e)=>handleOnChange(e)} type="number" name="value" {...register("value")} placeholder="Valor"/>
-            <p className='error-message'>{errors.value?.message}</p>
-            <input onChange={(e)=>handleOnChange(e)} type="number" name="amountSales" {...register("amountSales")} placeholder="Venda total"/> 
-            <p className='error-message'>{errors.amountSales?.message}</p>   
-            <input onChange={(e)=>handleOnChange(e)} type="text" name="productCode" {...register("productCode")} placeholder="Codigo"/> 
-            <p className='error-message'>{errors.productCode?.message}</p>   
-            <input onChange={(e)=>handleOnChange(e)} type="text" name="description" {...register("description")} placeholder="Descricao"/> 
-            <p className='error-message'>{errors.description?.message}</p>  
-            
+            <div className={styles.formControl}>
+                <label>Nome do produto:</label>
+                <input onChange={(e)=>handleOnChange(e)} type="text" name="productName" {...register("productName")} placeholder="Nome"/>
+                <p className='error-message'>{errors.productName?.message}</p>
+            </div>
+ 
+            <div className={styles.formControl}>
+                <label>Valor do produto:</label>
+                <input onChange={(e)=>handleOnChange(e)} type="number" name="value" {...register("value")} placeholder="Valor"/>
+                <p className='error-message'>{errors.value?.message}</p>
+            </div>
+
+            <div className={styles.formControl}>
+                <label>Total de vendas do produto:</label>
+                <input onChange={(e)=>handleOnChange(e)} type="number" name="amountSales" {...register("amountSales")} placeholder="Venda total"/> 
+                <p className='error-message'>{errors.amountSales?.message}</p> 
+            </div>
+
+            <div className={styles.formControl}>
+                <label>Código do produto:</label>
+                <input onChange={(e)=>handleOnChange(e)} type="text" name="productCode" {...register("productCode")} placeholder="Codigo"/> 
+                <p className='error-message'>{errors.productCode?.message}</p>  
+            </div>
+
+            <div className={styles.formControl}>
+                <label>Descrição do produto:</label>
+                <input onChange={(e)=>handleOnChange(e)} type="text" name="description" {...register("description")} placeholder="Descricao"/> 
+                <p className='error-message'>{errors.description?.message}</p>  
+            </div>
             <SubmitButton text={btnText}/>
         </form>
     )

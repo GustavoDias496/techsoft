@@ -5,7 +5,7 @@ import CadastroProduto from "./pages/cadastroProduto/CadastroProduto";
 import ListarProdutos from "./pages/listarProdutos/ListarProdutos";
 import EditProduto from "./pages/editarProduto/EditarProduto";
 
-function App() {
+function App() { 
   return (
     <Router>
         <Routes>

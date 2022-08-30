@@ -1,9 +1,13 @@
 .title{
-    padding-top: 7%;
-    color: #024059;
+    padding-top: 3%;
+    color: #000000;
     text-align: center;
     justify-content: space-between;
     padding-bottom: 0%;
+    margin-bottom: 40px;
+    font-family: Helvetica;
+    font-weight: bolder;
+    font-size: 24px;
 }
 
 .container{
@@ -11,11 +15,4 @@
     margin: 0 auto;
     padding: 3em;
 } 
-
-.container h1{
-    margin-bottom: 0.5em;
-}
-
-.container p{
-    color: blue;
-}
+ 

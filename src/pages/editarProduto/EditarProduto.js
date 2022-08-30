@@ -1,9 +1,9 @@
 import NavBar from "../../components/navbar/Navbar"
-import ProductForm from "../../components/ProductForm/ProductForm"
+import ProductFormEdit from "../../components/ProductFormEdit/ProductFormEdit"
 import styles from './EditarProduto.module.css'
 
 
-function EditProduto(){
+function EditProduto(){ 
     return(
         <div>
             <NavBar/>
@@ -11,7 +11,7 @@ function EditProduto(){
                 <div className={styles.title}>
                     <h1>Editar de Produtos</h1>
                 </div>
-                <ProductForm btnText='Editar Produto'/>
+                <ProductFormEdit btnText='Editar Produto'/>
             </div>
         </div>
     )
