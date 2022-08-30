@@ -7,6 +7,7 @@ import styles from './PaginaInicial.module.css'
 import { useState, useEffect} from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import Footer from "../../components/Footer/Footer"
 
 function Home(){
 
@@ -28,7 +29,7 @@ function Home(){
         })
     }, [])
 
-    products.sort(function(a,b){
+    const productsFilteredValue = products.sort(function(a,b){
         if(a.value > b.value){
             return -1
         }else{
@@ -36,10 +37,9 @@ function Home(){
         }
     })
 
-
-    const productsFilteredByValue = products.slice(0, 3)
+    const productsFilteredByValue = productsFilteredValue.slice(0, 3)
     
-    const telaProducts = productsFilteredByValue.map(product =>{
+    const screenProductsFilteredByValue = productsFilteredByValue.map(product =>{
         return(
             <div className={styles.card}>
                 <img src={appicon} alt="icone aplicativo"/>
@@ -59,15 +59,15 @@ function Home(){
     })
 
     return(
-        <div >
+        <div>
             <NavBar/>
             <div className={styles.bestProducts}>
                 <span>Produtos mais caros</span>
             </div>
             <div className={styles.cardContainer}>
-                {telaProducts}
+                {screenProductsFilteredByValue}
             </div>
-            
+            <Footer/>
         </div>
     )
 }

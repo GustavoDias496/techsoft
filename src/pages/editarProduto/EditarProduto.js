@@ -1,7 +1,7 @@
 import NavBar from "../../components/navbar/Navbar"
 import ProductFormEdit from "../../components/ProductFormEdit/ProductFormEdit"
 import styles from './EditarProduto.module.css'
-
+import Footer from "../../components/Footer/Footer"
 
 function EditProduto(){ 
     return(
@@ -13,6 +13,7 @@ function EditProduto(){
                 </div>
                 <ProductFormEdit btnText='Editar Produto'/>
             </div>
+            <Footer/>
         </div>
     )
 }

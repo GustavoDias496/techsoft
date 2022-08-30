@@ -68,13 +68,13 @@ function ProductFormEdit({btnText}){
  
             <div className={styles.formControl}>
                 <label>Valor do produto:</label>
-                <input onChange={(e)=>handleOnChange(e)} type="number" name="value" {...register("value")} placeholder="Valor"/>
+                <input disabled onChange={(e)=>handleOnChange(e)} type="number" name="value" {...register("value")} placeholder="Valor"/>
                 <p className='error-message'>{errors.value?.message}</p>
             </div>
 
             <div className={styles.formControl}>
                 <label>Total de vendas do produto:</label>
-                <input onChange={(e)=>handleOnChange(e)} type="number" name="amountSales" {...register("amountSales")} placeholder="Venda total"/> 
+                <input disabled onChange={(e)=>handleOnChange(e)} type="number" name="amountSales" {...register("amountSales")} placeholder="Venda total"/> 
                 <p className='error-message'>{errors.amountSales?.message}</p> 
             </div>
 

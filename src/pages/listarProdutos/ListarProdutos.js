@@ -7,6 +7,7 @@ import styles from './ListarProdutos.module.css'
 import appicon from '../../assets/computericon.svg'
 import editicon from '../../assets/editicon.svg'
 import deleteicon from '../../assets/deleteicon.svg'
+import Footer from "../../components/Footer/Footer"
 function ListarProdutos(){
 
     const [products, setProducts] = useState([])
@@ -61,7 +62,7 @@ function ListarProdutos(){
         <div >
             <NavBar/>
             <div className={styles.title}>
-                <p>Listar Produtos</p>
+                <h1>Listar Produtos</h1>
             </div>
             <div className={styles.cardContainer}>
                 {displayProducts}
@@ -77,6 +78,7 @@ function ListarProdutos(){
                     disabledClassName={styles.paginationDisabled}
                     activeClassName={styles.paginationActive}
                 />
+                <Footer/>
         </div>
     )
 }
