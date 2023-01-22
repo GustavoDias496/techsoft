@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const api = axios.create({
-    baseURL: "https://sifsoftapi.herokuapp.com/",
+    baseURL: "https://https://appnode-gustavodias496.koyeb.app/",
 });
 
 export default api;

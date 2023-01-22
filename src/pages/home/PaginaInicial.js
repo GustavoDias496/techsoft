@@ -12,7 +12,7 @@ import Footer from "../../components/Footer/Footer"
 function Home(){
 
     function deleteProduct(id) {
-        axios.delete(`https://sifsoftapi.herokuapp.com/products/${id}`)
+        axios.delete(`https://appnode-gustavodias496.koyeb.app/products/${id}`)
 
         setProducts(products.filter(product => product._id !== id))
     }
@@ -20,7 +20,7 @@ function Home(){
     const [products, setProducts] = useState([]) 
 
     useEffect(() => {
-        axios.get('https://sifsoftapi.herokuapp.com/products')
+        axios.get('https://appnode-gustavodias496.koyeb.app/products')
         .then((response)=>{
             setProducts(response.data)
         })

@@ -22,7 +22,7 @@ function ProductForm({btnText}){
         resolver: yupResolver(validationProduct)
     })
 
-    const addProduct = data => axios.post("https://sifsoftapi.herokuapp.com/products", data)
+    const addProduct = data => axios.post("https://appnode-gustavodias496.koyeb.app/products", data)
     .then(() =>{
         console.log("Deu tudo certo!")
         navigate('/')

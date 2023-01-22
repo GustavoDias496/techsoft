@@ -37,7 +37,7 @@ function ProductFormEdit({btnText}){
         console.log(newData)
     }
 
-    const updateProduct = data => axios.put(`https://sifsoftapi.herokuapp.com/products/${id}`, data)
+    const updateProduct = data => axios.put(`https://appnode-gustavodias496.koyeb.app/products/${id}`, data)
     .then(() =>{
         console.log("Deu tudo certo!")
         navigate('/')
@@ -51,7 +51,7 @@ function ProductFormEdit({btnText}){
     })
 
     useEffect(() =>{
-        axios.get(`https://sifsoftapi.herokuapp.com/products/${id}`)
+        axios.get(`https://appnode-gustavodias496.koyeb.app/products/${id}`)
         .then((response) =>{
             reset(response.data)
         })

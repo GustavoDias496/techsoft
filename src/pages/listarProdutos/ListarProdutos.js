@@ -39,7 +39,7 @@ function ListarProdutos(){
 
 
     useEffect(() => {
-        axios.get('https://sifsoftapi.herokuapp.com/products')
+        axios.get('https://appnode-gustavodias496.koyeb.app/products')
         .then((response)=>{
             setProducts(response.data)
         })
@@ -49,7 +49,7 @@ function ListarProdutos(){
     }, [])
 
     function deleteProduct(id) {
-        axios.delete(`https://sifsoftapi.herokuapp.com/products/${id}`)
+        axios.delete(`https://appnode-gustavodias496.koyeb.app/products/${id}`)
 
         setProducts(products.filter(product => product._id !== id))
     }
